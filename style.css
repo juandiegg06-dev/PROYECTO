@@ -67,11 +67,11 @@ article {
   border: 1px solid #ddd; 
   width: calc(100% + 40px);
   margin-left: -20px;
-  color: #ffffff; /* 👈 texto en blanco */
+  color: #ffffff; 
 }
 
 .article-meta {
-  color: #ccc; /* 👈 aclaramos para contraste */
+  color: #ccc; 
   font-size: 0.9em;
   margin: 10px 0;
 }
@@ -166,13 +166,13 @@ aside button:hover {
 
 aside section.sobre-mi .foto {
     width: 100%;
-    max-width: 250px;   /* ancho máximo del cuadro */
-    height: 250px;      /* altura fija para que quede cuadrado */
+    max-width: 250px;  
+    height: 250px;      
     margin: 0 auto 15px auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #111;   /* fondo oscuro para que no se note si sobra espacio */
+    background: #111;   
     border-radius: 5px;
     overflow: hidden;
 }
@@ -180,7 +180,7 @@ aside section.sobre-mi .foto {
 aside section.sobre-mi .foto img {
     max-width: 100%;
     max-height: 100%;
-    object-fit: contain; /* hace que se vea completa */
+    object-fit: contain; 
     border-radius: 5px;
 }
 
@@ -190,7 +190,7 @@ aside section.sobre-mi .foto img {
     }
 
     .card {
-        flex-basis: calc(33.33% - 0.7rem); /* Tres tarjetas por fila */
+        flex-basis: calc(33.33% - 0.7rem); 
     }
 }
 
