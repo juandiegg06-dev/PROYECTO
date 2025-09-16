@@ -198,3 +198,29 @@ aside section.sobre-mi .foto img {
     font-size: 3.5rem;
   }
 }
+@media (max-width: 480px) {
+  nav ul {
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+
+  nav li {
+    margin: 0 5px;
+  }
+
+  nav a {
+    font-size: 0.8rem;
+  }
+
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .header-content h1 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+}
+
