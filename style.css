@@ -184,4 +184,14 @@ aside section.sobre-mi .foto img {
     border-radius: 5px;
 }
 
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    .card {
+        flex-basis: calc(33.33% - 0.7rem); /* Tres tarjetas por fila */
+    }
+}
+
 
