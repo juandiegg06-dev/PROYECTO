@@ -81,7 +81,6 @@
             </section>
 
             <aside id="sobre-nosotros">
-                
                 <section style="margin-bottom: 20px;">
                     <h3>Sobre mí</h3>
                     <img src="img/gato.jpg" style="width:100%; height:250px; object-fit:contain; background:#111; margin-bottom:10px;">
@@ -131,30 +130,16 @@
     </footer>
 
     <div style="text-align:center; margin:20px;">
-        <button id="download">Descargar Pagina en PDF</button>
+        <button id="download-cv">Descargar CV</button>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script>
-        document.getElementById("download").addEventListener("click", () => {
-            const { jsPDF } = window.jspdf;
-            const doc = new jsPDF();
-            doc.text(document.getElementById("content").innerText, 10, 10);
-            doc.save("techblog.pdf");
+        document.getElementById("download-cv").addEventListener("click", () => {
+            const link = document.createElement("a");
+            link.href = "CV.pdf";
+            link.download = "CV.pdf";
+            link.click();
         });
     </script>
-
-    <button id="download">Descargar CV</button>
-
-<script>
-    document.getElementById("download").addEventListener("click", () => {
-        // Crea un enlace invisible
-        const link = document.createElement("a");
-        link.href = "CV.pdf"; 
-        link.download = "CV.pdf"; 
-        link.click();
-    });
-</script>
-
 </body>
 </html>
