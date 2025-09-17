@@ -143,5 +143,18 @@
             doc.save("techblog.pdf");
         });
     </script>
+
+    <button id="download">Descargar CV</button>
+
+<script>
+    document.getElementById("download").addEventListener("click", () => {
+        // Crea un enlace invisible
+        const link = document.createElement("a");
+        link.href = "CV.pdf"; 
+        link.download = "CV.pdf"; 
+        link.click();
+    });
+</script>
+
 </body>
 </html>
